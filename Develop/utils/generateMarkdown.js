@@ -1,11 +1,11 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  <h1 align="center">${answers.projectTitle} 👋</h1>
+  <h1 align="center">${data.projectTitle} 👋</h1>
   
-  ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br />
+  ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)<br />
   ## Description
-  🔍 ${answers.description}
+  🔍 ${data.description}
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
@@ -15,23 +15,23 @@ function generateMarkdown(data) {
   - [Tests](#tests)
   - [Questions](#questions)
   ## Installation
-  💾 ${answers.installation}
+  💾 ${data.installation}
   ## Usage
-  💻 ${answers.usage}
+  💻 ${data.usage}
   ## License
-  ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
+  ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
   <br />
-  This application is covered by the ${answers.license} license. 
+  This application is covered by the ${data.license} license. 
   ## Contributing
-  👪 ${answers.contributing}
+  👪 ${data.contributing}
   ## Tests
-  ✏️ ${answers.tests}
+  ✏️ ${data.tests}
   ## Questions
-  ✋ ${answers.questions}<br />
+  ✋ ${data.questions}<br />
   <br />
-  :octocat: Find me on GitHub: [${answers.username}](https://github.com/${answers.username})<br />
+  :octocat: Find me on GitHub: [${data.username}](https://github.com/${data.username})<br />
   <br />
-  ✉️ Email me with any questions: ${answers.email}<br /><br />
+  ✉️ Email me with any questions: ${data.email}<br /><br />
 `;
 }
 

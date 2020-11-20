@@ -82,8 +82,8 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     try {
-        const answers = promptUser();
-        const generateContent = generateMarkdown(answers);
+        const data = promptUser();
+        const generateContent = generateMarkdown(data);
          writeToFile('README.md', generateContent);
         console.log("Success!");
     } catch (err) {
