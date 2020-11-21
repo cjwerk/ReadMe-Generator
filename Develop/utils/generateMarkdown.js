@@ -1,7 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
-  <h1 align="center">${data.projectTitle} 👋</h1>
+  return `# ${data.projectTitle}
+  <h1>${data.projectTitle} 👋</h1>
   
   ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)<br />
   ## Description
@@ -29,7 +29,7 @@ function generateMarkdown(data) {
   ## Questions
   ✋ ${data.questions}<br />
   <br />
-  :octocat: Find me on GitHub: [${data.username}](https://github.com/${data.username})<br />
+   Find me on GitHub: [${data.username}](https://github.com/${data.username})<br />
   <br />
   ✉️ Email me with any questions: ${data.email}<br /><br />
 `;
