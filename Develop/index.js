@@ -77,14 +77,18 @@ function promptUser() {
 
 // function to write README file
 function writeToFile(fileName, data) {
-}
+    const data = promptUser();
+    fs.writeFile('./README.md', generateMarkdown(data))
+    if (err) return console.log(err);
+  console.log('no error');
+};
 
 // function to initialize program
 function init() {
     try {
         const data = promptUser();
         const generateContent = generateMarkdown(data);
-         writeToFile('README.md', generateContent);
+         writeToFile('./README.md', generateContent);
         console.log("Success!");
     } catch (err) {
         console.log(err);
